@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message"
+    android:layout_gravity="bottom|center_horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/description_corners"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayout">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:rotationY="180"
+                    android:background="@drawable/write"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/text_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textColorHint="@color/menuColor"
+                    android:hint="message.."/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
